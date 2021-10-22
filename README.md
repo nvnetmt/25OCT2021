@@ -1,2 +1,2 @@
-TestALMJENKINS.git
+regression-report-demo.git
 
