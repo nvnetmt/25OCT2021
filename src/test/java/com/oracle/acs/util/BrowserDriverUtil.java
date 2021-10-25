@@ -80,9 +80,9 @@ public class BrowserDriverUtil
     public static void init() {
         try {
 
-            WebDriverManager.chromedriver().setup();
+ /*           WebDriverManager.chromedriver().setup();
             WebDriver driver = new ChromeDriver();
-            driver.get("http://www.total-qa.com");
+            driver.get("http://www.total-qa.com");*/
             System.out.println("Browser launched");
             try{
                 PropertyUtils.loadProperties(new FileInputStream("src/test/resources/propertyFiles/default/system-default.properties"),true);
@@ -193,7 +193,7 @@ public class BrowserDriverUtil
         capabilities.setCapability("acceptInsecureCerts", true);
 
         //Added on 20-ct-2021
-        //WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
         final ChromeDriverService driverService = ChromeDriverService.createDefaultService();
 
 
