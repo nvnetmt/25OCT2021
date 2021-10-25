@@ -192,7 +192,7 @@ public class BrowserDriverUtil
         capabilities.setCapability("goog:chromeOptions", (Object)options);
         capabilities.setCapability("acceptInsecureCerts", true);
 
-        //Added on 20-ct-2021
+        //Added on 25-ct-2021
         WebDriverManager.chromedriver().setup();
         final ChromeDriverService driverService = ChromeDriverService.createDefaultService();
 
