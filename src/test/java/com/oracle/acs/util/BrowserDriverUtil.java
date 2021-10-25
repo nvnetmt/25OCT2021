@@ -80,9 +80,9 @@ public class BrowserDriverUtil
     public static void init() {
         try {
 
-//            WebDriverManager.chromedriver().setup();
-//            WebDriver driver = new ChromeDriver();
-//            driver.get("http://www.total-qa.com");
+            WebDriverManager.chromedriver().setup();
+            WebDriver driver = new ChromeDriver();
+            driver.get("http://www.total-qa.com");
             System.out.println("Browser launched");
             try{
                 PropertyUtils.loadProperties(new FileInputStream("src/test/resources/propertyFiles/default/system-default.properties"),true);
