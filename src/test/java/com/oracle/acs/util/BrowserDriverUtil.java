@@ -233,6 +233,7 @@ public class BrowserDriverUtil
         firefoxOptions.setBinary(firefoxBinary);
         firefoxOptions.setCapability("acceptSslCerts", true);
         firefoxOptions.setCapability("firefox_profile", (Object)firefoxProfile);
+        WebDriverManager.firefoxdriver().setup();  // Added on 25-OCT as part of change
         final WebDriver firefoxDriver = (WebDriver)new FirefoxDriver(firefoxOptions);
         firefoxDriver.manage().deleteAllCookies();
         firefoxDriver.manage().window().maximize();
